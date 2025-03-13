@@ -43,9 +43,16 @@ export default {
   },
   computed: {
     posterBg() {
-      return {
-        "background-image": `url(${this.movie.Poster})`,
-      };
+      if(this.movie.Poster) {
+        return {
+          "background-image": `url(${this.movie.Poster})`,
+        };
+      } else {
+        return {
+          "background-image": `url("@/assets/bg-card.webp")`,
+        };
+      }
+
     },
   },
   methods: {
