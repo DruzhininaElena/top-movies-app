@@ -79,7 +79,7 @@ export default {
   height: 500px;
 }
 .movie-item:hover {
-  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.7);
   transform: scale(1.02);
 }
 .movie-item-poster {
